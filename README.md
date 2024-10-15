@@ -35,7 +35,4 @@ source .\venv\bin\activate
 
 # For start server in local
 - mkdocs serve
-
-# Show output of document file
-- See [output](http://127.0.0.1:8000/)
 ```
