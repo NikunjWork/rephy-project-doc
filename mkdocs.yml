@@ -1,0 +1,68 @@
+site_name: ""
+site_url: "https://rephy.com"
+theme:
+  name: material
+  font:
+    text: Nunito Sans
+    # code: Nunito
+
+  logo: assets/logo.png
+  favicon: assets/favicon.ico
+
+  # For Start footer navigation
+  features:
+    - navigation.footer
+    - content.tabs.link
+
+  palette:
+    # Dark Mode
+    - scheme: slate # For website body bg colour
+      toggle:
+        icon: material/weather-sunny
+        name: Dark mode
+      primary: green # For main content colour (e.g : header, link)
+      accent: deep purple # For highlight link colour
+
+    # Light Mode
+    - scheme: default # For website body bg colour
+      toggle:
+        icon: material/weather-night
+        name: Light mode
+      primary: green # For main content colour (e.g : header, link)
+      accent: deep orange # For highlight link colour
+
+markdown_extensions:
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+  - pymdownx.tabbed:
+      alternate_style: true
+
+  - admonition
+  - pymdownx.details
+
+extra:
+  social:
+    - icon: simple/youtube
+      link: https://youtube.com
+    - icon: simple/google
+      link: https://google.com
+
+extra_javascript:
+  - js/custom.js
+
+copyright: Copyright &copy; 2024 Rephy
