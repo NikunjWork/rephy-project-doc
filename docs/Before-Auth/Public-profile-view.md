@@ -18,28 +18,4 @@
 
     Before login or register user can see limited provider profile details.
 
-    ??? code
-
-        ``` js
-            const [modalShow, setModalShow] = useState(false);
-
-            const [scrollValue, setScrollValue] = useState(0);
-
-            const onScroll = () => {
-                const onScrollDesktop =
-                document.getElementById("onScrollDesktop").scrollTop;
-                const onScrollMobile = document.getElementById("onScrollMobile").scrollTop;
-
-                const scrollTop = onScrollDesktop ? onScrollDesktop : onScrollMobile;
-
-                setScrollValue(scrollTop);
-            };
-
-            useEffect(() => {
-                if (scrollValue >= 600) {
-                setModalShow(true);
-                }
-            }, [scrollValue]);
-        ```
-
 ![Image title](/assets/site-images/before-auth/public-profile-view/3.jpeg)
