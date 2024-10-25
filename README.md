@@ -13,6 +13,10 @@ This is a Deocumnetation website for [rephy](https://rephy.com) and created usin
 
 `python -m venv venv`
 
+if that doesn't work, try following.
+
+`python3 -m venv venv`
+
 ### Active virtual environment
 
 ```bash
